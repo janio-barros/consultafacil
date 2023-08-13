@@ -1,3 +1,5 @@
+import 'package:consultafacil/view/consultarcep.dart';
+import 'package:consultafacil/view/listarbancos.dart';
 import 'package:consultafacil/view/menu.dart';
 import 'package:consultafacil/view/splash.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +18,8 @@ class ConsultaFacilApp extends StatelessWidget {
       routes: {
         '/splash': (context) => const Splash(),
         '/menu': (context) => const Menu(),
+        '/consultarcep': (context) => const ConsultarCep(),
+        '/listarbancos': (context) => const ListarBancos(),
       },
     );
   }

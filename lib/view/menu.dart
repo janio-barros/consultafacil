@@ -8,7 +8,7 @@ class Menu extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Consulta Fácil'),
+          title: const Text('Consulta Fácil'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -21,7 +21,17 @@ class Menu extends StatelessWidget {
                     style: TextStyle(fontSize: 20),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/listarbancos');
+                    },
+                    child: const Text(
+                      'Consultar Bancos',
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/consultarcep');
+                    },
                     child: const Text(
                       'Consultar CEP',
                     ),
